@@ -25,6 +25,12 @@ namespace DataAnnotations
                 .IsRequired()
                 .HasMaxLength(2000);
 
+            modelBuilder.Entity<Course>()
+                .HasRequired(c => c.Author)
+                .WithMany(a => a.Courses)
+                .HasForeignKey(c => c.AuthorId)
+                .WillCascadeOnDelete(false);
+
             base.OnModelCreating(modelBuilder);
         }
     }
