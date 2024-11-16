@@ -70,6 +70,8 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Documents\Data Annotations.pdf" />
+    <None Include="Documents\Fluent API.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
